@@ -1,0 +1,16 @@
+spring:
+  r2dbc:
+    url: ${PROD_DB_URL:}
+    username: ${PROD_DB_USERNAME:}
+    password: ${PROD_DB_PASSWORD:}
+
+# swagger-ui custom path
+springdoc:
+  enable-data-rest: false
+  swagger-ui:
+    enabled: false
+
+logging:
+  level:
+    org.springframework.data.r2dbc: Info
+    io.github.jelilio.feed: Info
