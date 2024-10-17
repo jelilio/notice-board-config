@@ -1,0 +1,17 @@
+# swagger-ui custom path
+springdoc:
+  version: "@springdoc.version@"
+  swagger-ui:
+    enabled: true
+    oauth:
+      clientId: ${keycloak.app.client-id}
+      clientSecret: ${keycloak.app.client-secret}
+  oAuthFlow:
+    authorizationUrl: ${keycloak.auth-url}/realms/${keycloak.realm}/protocol/openid-connect/auth
+    tokenUrl: ${keycloak.auth-url}/realms/${keycloak.realm}/protocol/openid-connect/token
+  enable-data-rest: true
+
+logging:
+  level:
+    org.springframework.data.r2dbc: Debug
+    io.github.jelilio.feed: Debug
