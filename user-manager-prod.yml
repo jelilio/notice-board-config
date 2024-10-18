@@ -13,4 +13,4 @@ springdoc:
 logging:
   level:
     org.springframework.data.r2dbc: Info
-    io.github.jelilio.feed: Info
+    io.github.jelilio.usermanager: Info
